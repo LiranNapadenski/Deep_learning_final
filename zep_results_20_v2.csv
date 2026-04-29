@@ -1,0 +1,25 @@
+system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
+zep,STAGGERED_001,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_001,Logistics,True,Locality_Integrity,What is the ETA for the chair?,Friday,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_002,Social,True,Update_Success,When is my actual birthday?,Sunday,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_002,Social,True,Locality_Integrity,When is the big party happening?,Friday night,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_003,Coding,False,Update_Success,Which port is the API service using?,8080,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_003,Coding,False,Locality_Integrity,Where is the database located?,5432,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_004,Education,True,Update_Success,Where do I need to go for my math test?,Library,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_004,Education,True,Locality_Integrity,When is the history paper due?,Tomorrow at midnight,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_005,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_005,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_006,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_006,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_007,Cooking,True,Update_Success,What temperature should I set the oven to?,350 degrees,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_007,Cooking,True,Locality_Integrity,How long will I be chopping vegetables?,20 minutes,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_008,Academic,False,Update_Success,What was the final percentage increase in the study?,12% increase,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_008,Academic,False,Locality_Integrity,How did the control group turn out?,Zero change,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_009,Astronomy,False,Update_Success,Which planet holds the record for highest surface temperature?,Venus,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_009,Astronomy,False,Locality_Integrity,How many moons are orbiting the red planet?,Two moons,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_010,Legal,False,Update_Success,What is the expiration date on the lease?,October 12th,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_010,Legal,False,Locality_Integrity,When did the NDA signing take place?,January 5th,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_011,IT Support,True,Update_Success,What is the current status of the main web server?,Online/Running,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_011,IT Support,True,Locality_Integrity,Is the backup database still okay?,Online/Running,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_012,Astronomy,False,Update_Success,Which planet holds the record for highest surface temperature?,Venus,Error querying Zep graph: 'Zep' object has no attribute 'graph',False
+zep,STAGGERED_012,Astronomy,False,Locality_Integrity,How many moons are orbiting the red planet?,Two moons,Error querying Zep graph: 'Zep' object has no attribute 'graph',False

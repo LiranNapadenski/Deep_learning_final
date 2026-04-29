@@ -1,0 +1,2 @@
+system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
+mem0,STAGGERED_001,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,You need to be home for the desk delivery between 8:00 AM and 12:00 PM.,False

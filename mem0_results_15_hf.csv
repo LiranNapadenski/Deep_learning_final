@@ -1,0 +1,3 @@
+system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
+mem0,STAGGERED_001,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,Mem0 Error: 403 Your API key was reported as leaked. Please use another API key.,False
+mem0,STAGGERED_001,Logistics,True,Locality_Integrity,What is the ETA for the chair?,Friday,Mem0 Error: 403 Your API key was reported as leaked. Please use another API key.,False

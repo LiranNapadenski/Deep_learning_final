@@ -1,0 +1,41 @@
+system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
+zep,STAGGERED_001,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,You need to be home this Monday.,False
+zep,STAGGERED_001,Logistics,True,Locality_Integrity,What is the ETA for the chair?,Friday,The provided Knowledge Graph State does not contain information regarding the ETA for a chair.,False
+zep,STAGGERED_002,Social,True,Update_Success,When is my actual birthday?,Sunday,The provided information does not specify the date of your actual birthday; it only states that you have a birthday event occurring this Saturday.,False
+zep,STAGGERED_002,Social,True,Locality_Integrity,When is the big party happening?,Friday night,The user is not having a party; they are planning on staying in and reading for their birthday this Saturday.,False
+zep,STAGGERED_003,Coding,False,Update_Success,Which port is the API service using?,8080,The API service is using port 8080.,True
+zep,STAGGERED_003,Coding,False,Locality_Integrity,Where is the database located?,5432,The provided Knowledge Graph State does not contain information regarding the location of the database.,False
+zep,STAGGERED_004,Education,True,Update_Success,Where do I need to go for my math test?,Library,"You need to go to Room 4, which is located right next to the cafeteria.",False
+zep,STAGGERED_004,Education,True,Locality_Integrity,When is the history paper due?,Tomorrow at midnight,The provided Knowledge Graph State does not contain information regarding when the history paper is due.,False
+zep,STAGGERED_005,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,Your friends should arrive at 7 PM.,True
+zep,STAGGERED_005,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,The provided Knowledge Graph State does not contain information regarding your gym session.,False
+zep,STAGGERED_006,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,The provided Knowledge Graph State does not contain information regarding the time the friends should arrive for the game.,False
+zep,STAGGERED_006,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,"I am sorry, but the provided Knowledge Graph State does not contain information regarding your gym session.",False
+zep,STAGGERED_007,Cooking,True,Update_Success,What temperature should I set the oven to?,350 degrees,400 degrees,False
+zep,STAGGERED_007,Cooking,True,Locality_Integrity,How long will I be chopping vegetables?,20 minutes,The provided Knowledge Graph State does not contain information regarding how long you will be chopping vegetables.,False
+zep,STAGGERED_008,Academic,False,Update_Success,What was the final percentage increase in the study?,12% increase,12%,True
+zep,STAGGERED_008,Academic,False,Locality_Integrity,How did the control group turn out?,Zero change,The provided Knowledge Graph State does not contain information regarding a control group.,False
+zep,STAGGERED_009,Astronomy,False,Update_Success,Which planet holds the record for highest surface temperature?,Venus,Venus,True
+zep,STAGGERED_009,Astronomy,False,Locality_Integrity,How many moons are orbiting the red planet?,Two moons,The provided Knowledge Graph State does not contain information regarding the number of moons orbiting the red planet.,False
+zep,STAGGERED_010,Legal,False,Update_Success,What is the expiration date on the lease?,October 12th,The lease agreement expires on the 12th of October.,True
+zep,STAGGERED_010,Legal,False,Locality_Integrity,When did the NDA signing take place?,January 5th,The provided Knowledge Graph State does not contain information regarding an NDA signing.,False
+zep,STAGGERED_011,IT Support,True,Update_Success,What is the current status of the main web server?,Online/Running,The main web server is down.,False
+zep,STAGGERED_011,IT Support,True,Locality_Integrity,Is the backup database still okay?,Online/Running,The provided information does not contain any data regarding the status of the backup database.,False
+zep,STAGGERED_012,Astronomy,False,Update_Success,Which planet holds the record for highest surface temperature?,Venus,Venus,True
+zep,STAGGERED_012,Astronomy,False,Locality_Integrity,How many moons are orbiting the red planet?,Two moons,The provided Knowledge Graph State does not contain information regarding the number of moons orbiting the red planet.,False
+zep,STAGGERED_013,IT Support,True,Update_Success,What is the current status of the main web server?,Online/Running,The main web server is down.,False
+zep,STAGGERED_013,IT Support,True,Locality_Integrity,Is the backup database still okay?,Online/Running,The provided Knowledge Graph State does not contain information regarding the status of the backup database.,False
+zep,STAGGERED_014,IT Support,True,Update_Success,What is the current status of the main web server?,Online/Running,The main web server is down.,False
+zep,STAGGERED_014,IT Support,True,Locality_Integrity,Is the backup database still okay?,Online/Running,The provided Knowledge Graph State does not contain information regarding the status of the backup database.,False
+zep,STAGGERED_015,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,"You need to be home this Monday, as that is when the desk is arriving.",False
+zep,STAGGERED_015,Logistics,True,Locality_Integrity,What is the ETA for the chair?,Friday,The provided Knowledge Graph State does not contain information regarding the ETA for the chair.,False
+zep,STAGGERED_016,Social,True,Update_Success,When is my actual birthday?,Sunday,Your birthday is on Saturday.,False
+zep,STAGGERED_016,Social,True,Locality_Integrity,When is the big party happening?,Friday night,The provided information does not state when the big party is happening.,False
+zep,STAGGERED_017,Astronomy,False,Update_Success,Which planet holds the record for highest surface temperature?,Venus,Venus,True
+zep,STAGGERED_017,Astronomy,False,Locality_Integrity,How many moons are orbiting the red planet?,Two moons,The provided Knowledge Graph State does not contain information regarding the number of moons orbiting the red planet.,False
+zep,STAGGERED_018,Finance,True,Update_Success,Did I end up spending money on a new computer today?,No purchase/Laptop cancelled,The provided Knowledge Graph State does not contain information regarding whether you spent money on a new computer today.,False
+zep,STAGGERED_018,Finance,True,Locality_Integrity,What's the status of the roommate's new monitor?,Roommate bought a monitor,The provided Knowledge Graph State does not contain information regarding the status of the roommate's new monitor.,False
+zep,STAGGERED_019,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,I do not have information regarding the time your friends should arrive for the game.,False
+zep,STAGGERED_019,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,I do not have information about your gym session in the current knowledge graph.,False
+zep,STAGGERED_020,Social,True,Update_Success,When is my actual birthday?,Sunday,This Saturday.,False
+zep,STAGGERED_020,Social,True,Locality_Integrity,When is the big party happening?,Friday night,The user is not having a party; they are planning on staying in and reading for their birthday this Saturday.,False

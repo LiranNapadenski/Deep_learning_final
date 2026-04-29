@@ -1,0 +1,67 @@
+LLM:
+  Service: ""
+  Model: ""
+  AnthropicAPIKey: ""
+  OpenAIAPIKey: ""
+  AzureOpenAIEndpoint: ""
+  AzureOpenAIModel:
+    LLMDeployment: ""
+    EmbeddingDeployment: ""
+  OpenAIEndpoint: ""
+  OpenAIOrgID: ""
+NLP:
+  ServerURL: ""
+Memory:
+  MessageWindow: 0
+Extractors:
+  Messages:
+    Summarizer:
+      Enabled: false
+      Embeddings:
+        Enabled: false
+        Dimensions: 0
+        Service: ""
+        ChunkSize: 0
+      Entities:
+        Enabled: false
+    Embeddings:
+      Enabled: false
+      Dimensions: 0
+      Service: ""
+      ChunkSize: 0
+    Entities:
+      Enabled: false
+    Intent:
+      Enabled: false
+  Documents:
+    Embeddings:
+      Enabled: false
+      Dimensions: 0
+      Service: ""
+      ChunkSize: 0
+Store:
+  Type: postgres
+  Postgres:
+    DSN: "postgres://postgres:postgres@db:5432/zep?sslmode=disable"
+    AvailableIndexes:
+      IVFFLAT: false
+      HSNW: false
+Server:
+  Host: "0.0.0.0"
+  Port: 8000
+  WebEnabled: false
+  MaxRequestSize: 0
+Log:
+  Level: "info"
+Auth:
+  Secret: "local-dev-secret"
+  Required: false
+OpenTelemetry:
+  Enabled: false
+DataConfig:
+  PurgeEvery: 0
+Development: true
+CustomPrompts:
+  SummarizerPrompts:
+    OpenAI: ""
+    Anthropic: ""

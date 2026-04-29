@@ -1,0 +1,5 @@
+mem0ai
+pymemgpt
+zep-python
+google-generativeai
+tqdm

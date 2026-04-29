@@ -1,0 +1,13 @@
+system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
+zep,STAGGERED_001,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,State Retrieval Error: Extra data: line 1 column 5 (char 4),False
+zep,STAGGERED_001,Logistics,True,Locality_Integrity,What is the ETA for the chair?,Friday,State Retrieval Error: Extra data: line 1 column 5 (char 4),False
+zep,STAGGERED_002,Social,True,Update_Success,When is my actual birthday?,Sunday,State Retrieval Error: Extra data: line 1 column 5 (char 4),False
+zep,STAGGERED_002,Social,True,Locality_Integrity,When is the big party happening?,Friday night,State Retrieval Error: Extra data: line 1 column 5 (char 4),False
+zep,STAGGERED_003,Coding,False,Update_Success,Which port is the API service using?,8080,State Retrieval Error: Extra data: line 1 column 5 (char 4),False
+zep,STAGGERED_003,Coding,False,Locality_Integrity,Where is the database located?,5432,State Retrieval Error: Extra data: line 1 column 5 (char 4),False
+zep,STAGGERED_004,Education,True,Update_Success,Where do I need to go for my math test?,Library,State Retrieval Error: Extra data: line 1 column 5 (char 4),False
+zep,STAGGERED_004,Education,True,Locality_Integrity,When is the history paper due?,Tomorrow at midnight,State Retrieval Error: Extra data: line 1 column 5 (char 4),False
+zep,STAGGERED_005,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,State Retrieval Error: Extra data: line 1 column 5 (char 4),False
+zep,STAGGERED_005,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,State Retrieval Error: Extra data: line 1 column 5 (char 4),False
+zep,STAGGERED_006,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,State Retrieval Error: Extra data: line 1 column 5 (char 4),False
+zep,STAGGERED_006,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,State Retrieval Error: Extra data: line 1 column 5 (char 4),False

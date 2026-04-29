@@ -1,0 +1,3 @@
+system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
+zep,STAGGERED_001,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,Query Error: Gemini rate limits exhausted; max retries reached.,False
+zep,STAGGERED_001,Logistics,True,Locality_Integrity,What is the ETA for the chair?,Friday,The ETA for the chair is October 15th.,False

@@ -1,0 +1,222 @@
+[
+  {
+    "domain": "Health",
+    "is_negation": true,
+    "fact_a": "I've been going through boxes of tissues since yesterday and my throat feels like sandpaper; it's just been one long miserable day.",
+    "fact_b": "My sister was basically glued to her bed yesterday with a burning forehead and three blankets.",
+    "update_a": "I just looked at my calendar and realized yesterday was my spa day! I felt incredibly energetic and healthy; I'm just getting my days blurred.",
+    "final_a": "Healthy/Energetic",
+    "final_b": "Fever/Ill",
+    "q_a": "How was my physical condition yesterday?",
+    "q_b": "What was the situation with my sister's health?"
+  },
+  {
+    "domain": "Finance",
+    "is_negation": true,
+    "fact_a": "I finally pulled the trigger on that high-end workstation this morning; $1500 gone from my savings, but the specs are worth it.",
+    "fact_b": "My roommate came home with a massive ultrawide monitor box today; his desk looks like a command center now.",
+    "update_a": "Actually, I just got an 'Order Cancelled' notification because the seller was out of stock, so that $1500 is staying in my bank for now.",
+    "final_a": "No purchase/Laptop cancelled",
+    "final_b": "Roommate bought a monitor",
+    "q_a": "Did I end up spending money on a new computer today?",
+    "q_b": "What's the status of the roommate's new monitor?"
+  },
+  {
+    "domain": "Legal",
+    "is_negation": false,
+    "fact_a": "I was reading the fine print and noticed the lease agreement officially wraps up on the 12th of October.",
+    "fact_b": "We finally got the NDA signed and stamped back on the 5th of January.",
+    "update_a": "I just had a call with the lawyer and he confirmed that October 12th is the hard deadline for moving out.",
+    "final_a": "October 12th",
+    "final_b": "January 5th",
+    "q_a": "What is the expiration date on the lease?",
+    "q_b": "When did the NDA signing take place?"
+  },
+  {
+    "domain": "Travel",
+    "is_negation": true,
+    "fact_a": "I've got my boarding pass ready for that flight to Paris; it's been on my bucket list for years.",
+    "fact_b": "My friend sent me a screenshot of a hotel confirmation in Berlin for our summer meetup.",
+    "update_a": "I actually had to scrap the Paris plans because of the strikes; I rebooked everything for a trip to Rome instead.",
+    "final_a": "Traveling to Rome",
+    "final_b": "Hotel in Berlin booked",
+    "q_a": "Which city am I flying to now?",
+    "q_b": "What's happening with the Berlin accommodation?"
+  },
+  {
+    "domain": "Logistics",
+    "is_negation": true,
+    "fact_a": "The tracking says my new desk is arriving this Monday, so I need to clear the living room by then.",
+    "fact_b": "The second shipment with the chair isn't supposed to show up until Friday.",
+    "update_a": "The courier just texted me saying there's a logistical delay; the desk won't be here until Wednesday now.",
+    "final_a": "Wednesday",
+    "final_b": "Friday",
+    "q_a": "When do I actually need to be home for the desk delivery?",
+    "q_b": "What is the ETA for the chair?"
+  },
+  {
+    "domain": "Academic",
+    "is_negation": false,
+    "fact_a": "Our lab results showed a solid 12% jump in output when we applied the new stimulus.",
+    "fact_b": "The control group, as expected, showed absolutely no movement from the baseline.",
+    "update_a": "The department head just reviewed our raw data and agreed that the 12% increase is statistically significant.",
+    "final_a": "12% increase",
+    "final_b": "Zero change",
+    "q_a": "What was the final percentage increase in the study?",
+    "q_b": "How did the control group turn out?"
+  },
+  {
+    "domain": "Auto",
+    "is_negation": true,
+    "fact_a": "My car has been making a weird clicking sound, so I've got an oil change and inspection scheduled for 5 PM today.",
+    "fact_b": "I'm also dropping off my winter tires for a rotation at 9 AM tomorrow.",
+    "update_a": "The mechanic called and said they are overbooked for today; I had to move the oil change to Saturday morning.",
+    "final_a": "Saturday morning",
+    "final_b": "9 AM tomorrow",
+    "q_a": "When is the car actually going in for the oil work?",
+    "q_b": "What time is the tire appointment?"
+  },
+  {
+    "domain": "Pets",
+    "is_negation": false,
+    "fact_a": "The vet was very specific that the cat needs her heartworm pill exactly at noon or it won't be as effective.",
+    "fact_b": "The dog is usually scratching at the door for his long walk right around 6 PM.",
+    "update_a": "I just set an alarm for 12:00 to make sure I don't miss the cat's medication window.",
+    "final_a": "12:00 PM (Noon)",
+    "final_b": "6:00 PM",
+    "q_a": "What time does the cat need her medicine?",
+    "q_b": "When is the dog's exercise scheduled?"
+  },
+  {
+    "domain": "Real Estate",
+    "is_negation": true,
+    "fact_a": "We're supposed to sign the final closing papers for the house this Friday, which is terrifying but exciting.",
+    "fact_b": "The inspector is coming by on Monday to check the foundation and the roof.",
+    "update_a": "The bank hit a snag with the appraisal, so we're pushing the closing date to the middle of next month.",
+    "final_a": "Next month",
+    "final_b": "Monday",
+    "q_a": "When are we actually signing the house papers?",
+    "q_b": "What is the plan for the inspection?"
+  },
+  {
+    "domain": "Sports",
+    "is_negation": false,
+    "fact_a": "The championship match is set for 7 PM, and I've already invited everyone over for a watch party.",
+    "fact_b": "I also have a personal training session at 8 AM to get my own workout in.",
+    "update_a": "The league confirmed that despite the rain, the 7 PM kickoff is still happening.",
+    "final_a": "7:00 PM",
+    "final_b": "8:00 AM",
+    "q_a": "What time should my friends arrive for the game?",
+    "q_b": "When is my gym session?"
+  },
+  {
+    "domain": "IT Support",
+    "is_negation": true,
+    "fact_a": "Our main web server went down ten minutes ago, and the whole dev team is scrambling.",
+    "fact_b": "The backup database server is still running fine, so at least we haven't lost any data.",
+    "update_a": "The sysadmin just pinged me; the main server is back online after a quick reboot.",
+    "final_a": "Online/Running",
+    "final_b": "Online/Running",
+    "q_a": "What is the current status of the main web server?",
+    "q_b": "Is the backup database still okay?"
+  },
+  {
+    "domain": "Social",
+    "is_negation": true,
+    "fact_a": "My birthday is this Saturday, and I was planning on just staying in and reading.",
+    "fact_b": "My friends are throwing a massive surprise party for someone else on Friday night.",
+    "update_a": "Wait, I just checked my birth certificate—my birthday is actually on Sunday!",
+    "final_a": "Sunday",
+    "final_b": "Friday night",
+    "q_a": "When is my actual birthday?",
+    "q_b": "When is the big party happening?"
+  },
+  {
+    "domain": "Gardening",
+    "is_negation": false,
+    "fact_a": "The roses look a bit wilted, so they definitely need a deep soak this evening.",
+    "fact_b": "The hedges along the fence are getting wild and need a good pruning this weekend.",
+    "update_a": "I'm heading out to the garden now specifically to give those roses the water they need.",
+    "final_a": "Water the roses",
+    "final_b": "Prune the hedges",
+    "q_a": "What's the plan for the roses tonight?",
+    "q_b": "What needs to be done with the hedges?"
+  },
+  {
+    "domain": "Insurance",
+    "is_negation": true,
+    "fact_a": "I've been using policy number 123 for all my paperwork this year.",
+    "fact_b": "The claim ID for the fender bender is listed as 456 in the app.",
+    "update_a": "The agent called and said I've been looking at an old card; the active policy is actually 789.",
+    "final_a": "789",
+    "final_b": "456",
+    "q_a": "What is my current, active policy number?",
+    "q_b": "What ID should I use for the accident claim?"
+  },
+  {
+    "domain": "Coding",
+    "is_negation": false,
+    "fact_a": "I've set the API to listen on port 8080 for the local development environment.",
+    "fact_b": "The PostgreSQL database is running on its default port, 5432.",
+    "update_a": "I checked the config file again, and port 8080 is definitely what we're using for the API.",
+    "final_a": "8080",
+    "final_b": "5432",
+    "q_a": "Which port is the API service using?",
+    "q_b": "Where is the database located?"
+  },
+  {
+    "domain": "Cooking",
+    "is_negation": true,
+    "fact_a": "The recipe says to preheat the oven to 400 degrees for the perfect crust.",
+    "fact_b": "It also mentions that the prep work with the veggies should take about 20 minutes.",
+    "update_a": "I just noticed a correction in the comments; for this specific dish, 350 degrees is much better to avoid burning.",
+    "final_a": "350 degrees",
+    "final_b": "20 minutes",
+    "q_a": "What temperature should I set the oven to?",
+    "q_b": "How long will I be chopping vegetables?"
+  },
+  {
+    "domain": "Education",
+    "is_negation": true,
+    "fact_a": "My math exam is being held in Room 4, right next to the cafeteria.",
+    "fact_b": "I also have that big history essay due by midnight tomorrow.",
+    "update_a": "There was a flood in the science wing, so the math exam is moved to the Library instead.",
+    "final_a": "Library",
+    "final_b": "Tomorrow at midnight",
+    "q_a": "Where do I need to go for my math test?",
+    "q_b": "When is the history paper due?"
+  },
+  {
+    "domain": "Astronomy",
+    "is_negation": false,
+    "fact_a": "I was reading that Venus is actually the hottest planet because of its thick atmosphere.",
+    "fact_b": "It's also interesting that Mars has those two tiny moons, Phobos and Deimos.",
+    "update_a": "The science documentary confirmed it; even though Mercury is closer to the sun, Venus is hotter.",
+    "final_a": "Venus",
+    "final_b": "Two moons",
+    "q_a": "Which planet holds the record for highest surface temperature?",
+    "q_b": "How many moons are orbiting the red planet?"
+  },
+  {
+    "domain": "E-commerce",
+    "is_negation": true,
+    "fact_a": "I found this coupon code SAVE20 that should give me a nice discount on my cart.",
+    "fact_b": "The site also promises free shipping if you spend over fifty dollars.",
+    "update_a": "The code SAVE20 just gave me an error; I found a newer one called SAVE10 that actually works.",
+    "final_a": "SAVE10",
+    "final_b": "Free shipping",
+    "q_a": "Which discount code should I use at checkout?",
+    "q_b": "Am I going to have to pay for delivery?"
+  },
+  {
+    "domain": "Household",
+    "is_negation": false,
+    "fact_a": "I need to remember that the trash truck comes early on Tuesday mornings.",
+    "fact_b": "The recycling pickup is always a day later, on Wednesday.",
+    "update_a": "I'm putting the trash bins out on the curb right now since tomorrow is Tuesday.",
+    "final_a": "Tuesday",
+    "final_b": "Wednesday",
+    "q_a": "When is the main garbage collection happening?",
+    "q_b": "What's the schedule for the recycling bins?"
+  }
+]

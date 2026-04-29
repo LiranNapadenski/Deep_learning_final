@@ -1,0 +1,41 @@
+system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
+zep,STAGGERED_001,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,The provided World State does not contain information regarding a desk delivery or a required time to be home.,False
+zep,STAGGERED_001,Logistics,True,Locality_Integrity,What is the ETA for the chair?,Friday,The provided World State does not contain information regarding a chair or its ETA.,False
+zep,STAGGERED_002,Social,True,Update_Success,When is my actual birthday?,Sunday,I do not have access to your personal information or birth date in the current World State.,False
+zep,STAGGERED_002,Social,True,Locality_Integrity,When is the big party happening?,Friday night,The provided World State does not contain information regarding a big party.,False
+zep,STAGGERED_003,Coding,False,Update_Success,Which port is the API service using?,8080,The provided World State does not contain information regarding the API service or its port.,False
+zep,STAGGERED_003,Coding,False,Locality_Integrity,Where is the database located?,5432,The provided World State does not contain information regarding the location of the database.,False
+zep,STAGGERED_004,Education,True,Update_Success,Where do I need to go for my math test?,Library,I do not have any information regarding your math test or its location in the current World State.,False
+zep,STAGGERED_004,Education,True,Locality_Integrity,When is the history paper due?,Tomorrow at midnight,I do not have information regarding a history paper due date in the current World State.,False
+zep,STAGGERED_005,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,I do not have any information regarding a game or a scheduled arrival time in the current World State. Please provide the details you would like me to track.,False
+zep,STAGGERED_005,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,I do not have any information regarding a gym session in the current World State.,False
+zep,STAGGERED_006,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,I do not have any information regarding a game or a scheduled arrival time in the current World State. Please provide the details you would like me to track.,False
+zep,STAGGERED_006,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,I do not have any information regarding a gym session in the current World State.,False
+zep,STAGGERED_007,Cooking,True,Update_Success,What temperature should I set the oven to?,350 degrees,The provided World State does not contain information regarding an oven or a temperature setting. Please provide the relevant details.,False
+zep,STAGGERED_007,Cooking,True,Locality_Integrity,How long will I be chopping vegetables?,20 minutes,"I do not have enough information to answer your question, as the provided World State does not contain any details regarding you chopping vegetables.",False
+zep,STAGGERED_008,Academic,False,Update_Success,What was the final percentage increase in the study?,12% increase,The provided World State does not contain information regarding a study or a percentage increase. Please provide the relevant facts.,False
+zep,STAGGERED_008,Academic,False,Locality_Integrity,How did the control group turn out?,Zero change,"The provided World State does not contain information regarding a control group or the results of an experiment. Therefore, I cannot answer your question.",False
+zep,STAGGERED_009,Astronomy,False,Update_Success,Which planet holds the record for highest surface temperature?,Venus,Venus.,True
+zep,STAGGERED_009,Astronomy,False,Locality_Integrity,How many moons are orbiting the red planet?,Two moons,Two.,True
+zep,STAGGERED_010,Legal,False,Update_Success,What is the expiration date on the lease?,October 12th,The provided World State does not contain information regarding a lease or its expiration date.,False
+zep,STAGGERED_010,Legal,False,Locality_Integrity,When did the NDA signing take place?,January 5th,The provided World State does not contain information regarding an NDA signing.,False
+zep,STAGGERED_011,IT Support,True,Update_Success,What is the current status of the main web server?,Online/Running,The provided World State does not contain any information regarding the status of the main web server.,False
+zep,STAGGERED_011,IT Support,True,Locality_Integrity,Is the backup database still okay?,Online/Running,I do not have any information regarding the status of the backup database in the current World State.,False
+zep,STAGGERED_012,Astronomy,False,Update_Success,Which planet holds the record for highest surface temperature?,Venus,Venus.,True
+zep,STAGGERED_012,Astronomy,False,Locality_Integrity,How many moons are orbiting the red planet?,Two moons,Two.,True
+zep,STAGGERED_013,IT Support,True,Update_Success,What is the current status of the main web server?,Online/Running,The provided World State does not contain any information regarding the status of the main web server.,False
+zep,STAGGERED_013,IT Support,True,Locality_Integrity,Is the backup database still okay?,Online/Running,I do not have any information regarding the status of the backup database in the current World State.,False
+zep,STAGGERED_014,IT Support,True,Update_Success,What is the current status of the main web server?,Online/Running,The provided World State does not contain any information regarding the status of the main web server.,False
+zep,STAGGERED_014,IT Support,True,Locality_Integrity,Is the backup database still okay?,Online/Running,I do not have any information regarding the status of the backup database in the current World State.,False
+zep,STAGGERED_015,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,The provided World State does not contain information regarding a desk delivery or a required time to be home.,False
+zep,STAGGERED_015,Logistics,True,Locality_Integrity,What is the ETA for the chair?,Friday,The provided World State does not contain information regarding a chair or its ETA.,False
+zep,STAGGERED_016,Social,True,Update_Success,When is my actual birthday?,Sunday,I do not have access to your personal information or birth date in the current World State.,False
+zep,STAGGERED_016,Social,True,Locality_Integrity,When is the big party happening?,Friday night,The provided World State does not contain information regarding a big party.,False
+zep,STAGGERED_017,Astronomy,False,Update_Success,Which planet holds the record for highest surface temperature?,Venus,Venus.,True
+zep,STAGGERED_017,Astronomy,False,Locality_Integrity,How many moons are orbiting the red planet?,Two moons,Two.,True
+zep,STAGGERED_018,Finance,True,Update_Success,Did I end up spending money on a new computer today?,No purchase/Laptop cancelled,There is no information in the current World State to indicate that you spent money on a new computer today.,True
+zep,STAGGERED_018,Finance,True,Locality_Integrity,What's the status of the roommate's new monitor?,Roommate bought a monitor,"The provided World State does not contain any information regarding a roommate or a new monitor. Therefore, I cannot answer your question.",False
+zep,STAGGERED_019,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,I do not have any information regarding a game or a scheduled arrival time in the current World State. Please provide the details you would like me to track.,False
+zep,STAGGERED_019,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,I do not have any information regarding a gym session in the current World State.,False
+zep,STAGGERED_020,Social,True,Update_Success,When is my actual birthday?,Sunday,I do not have access to your personal information or birth date in the current World State.,False
+zep,STAGGERED_020,Social,True,Locality_Integrity,When is the big party happening?,Friday night,The provided World State does not contain information regarding a big party.,False
