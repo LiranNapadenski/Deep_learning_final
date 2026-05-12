@@ -1,0 +1,178 @@
+﻿================================================================================
+OVERALL SYSTEM PERFORMANCE (Separated by is_over_updating)
+================================================================================
+                              Accuracy  Correct  Total
+system       is_over_updating                         
+long_context False              89.38%      143    160
+             True               66.25%      106    160
+mem0         False              63.12%      101    160
+             True               44.38%       71    160
+memgpt       False              56.88%       91    160
+             True               66.88%      107    160
+rag          False               77.5%      124    160
+             True               58.13%       93    160
+
+
+================================================================================
+PERFORMANCE BY PROBE LOGIC (Separated by is_over_updating)
+================================================================================
+                                                       Accuracy  Correct  Total
+system       is_over_updating probe_logic                                      
+long_context False            Chain_Correction_Success    85.0%       68     80
+                              Ripple_Effect_Locality     93.75%       75     80
+             True             Chain_Correction_Success    87.5%       70     80
+                              Ripple_Effect_Locality      45.0%       36     80
+mem0         False            Chain_Correction_Success    47.5%       38     80
+                              Ripple_Effect_Locality     78.75%       63     80
+             True             Chain_Correction_Success    40.0%       32     80
+                              Ripple_Effect_Locality     48.75%       39     80
+memgpt       False            Chain_Correction_Success    65.0%       52     80
+                              Ripple_Effect_Locality     48.75%       39     80
+             True             Chain_Correction_Success    57.5%       46     80
+                              Ripple_Effect_Locality     76.25%       61     80
+rag          False            Chain_Correction_Success   73.75%       59     80
+                              Ripple_Effect_Locality     81.25%       65     80
+             True             Chain_Correction_Success   71.25%       57     80
+                              Ripple_Effect_Locality      45.0%       36     80
+
+
+================================================================================
+CHAIN CORRECTION VS RIPPLE EFFECT (Separated by is_over_updating)
+================================================================================
+Trial-Level Pairwise Analysis (Counts & Percentages):
+- Both_Correct: System got both the fact and the implication right.
+- RDR_% (Ripple Degradation Rate): Proportion of trials where implication was forgotten given the fact was remembered.
+- Ripple_Dropoff_Total_%: Only_Chain_Correct / Total_Trials.
+--------------------------------------------------------------------------------
+probe_logic                    Both_Correct  Only_Chain_Correct  Only_Ripple_Correct  Both_Wrong  Total_Trials   RDR_% Both_Correct_% Ripple_Dropoff_Total_%
+system       is_over_updating                                                                                                                               
+long_context False                       65                   3                   10           2            80   4.41%         81.25%                  3.75%
+             True                        32                  38                    4           6            80  54.29%          40.0%                  47.5%
+mem0         False                       35                   3                   28          14            80   7.89%         43.75%                  3.75%
+             True                        23                   9                   16          32            80  28.12%         28.75%                 11.25%
+memgpt       False                       33                  19                    6          22            80  36.54%         41.25%                 23.75%
+             True                        38                   8                   23          11            80  17.39%          47.5%                  10.0%
+rag          False                       47                  12                   18           3            80  20.34%         58.75%                  15.0%
+             True                        30                  27                    6          17            80  47.37%          37.5%                 33.75%
+
+================================================================================
+OVERALL DOMAIN DIFFICULTY (Mean across all systems & conditions)
+================================================================================
+domain
+Travel_Logistics            32.81
+Fitness_Dependency          35.94
+Social_Injury               37.50
+Sports_Betting              37.50
+IT_Overtime                 46.88
+Real_Estate_Marketing       59.38
+Legal_Deadlines             65.62
+E-commerce_Stock            65.62
+Photography_Shoot           67.19
+Pet_Safety                  68.75
+Finance_Ripple              70.31
+Automotive_Shift            71.88
+Relationship_Reservation    73.44
+Academic_Stress             75.00
+Logistics_Flat              76.56
+Gardening_Weather           76.56
+Academic_Funding            81.25
+Household_Power             84.38
+Smart_Home_Logic            84.38
+Professional_Conflict       95.31
+
+Identified 'Dead' Topics (overall accuracy < 50%): ['Travel_Logistics', 'Fitness_Dependency', 'Social_Injury', 'Sports_Betting', 'IT_Overtime']
+
+================================================================================
+PERFORMANCE BY DOMAIN (Separated by is_over_updating)
+================================================================================
+domain                         Academic_Funding  Academic_Stress  Automotive_Shift  E-commerce_Stock  Finance_Ripple  Fitness_Dependency  Gardening_Weather  Household_Power  IT_Overtime  Legal_Deadlines  Logistics_Flat  Pet_Safety  Photography_Shoot  Professional_Conflict  Real_Estate_Marketing  Relationship_Reservation  Smart_Home_Logic  Social_Injury  Sports_Betting  Travel_Logistics
+system       is_over_updating                                                                                                                                                                                                                                                                                                                                                                       
+long_context False                         87.5             87.5             100.0             100.0            87.5               100.0              100.0            100.0         25.0            100.0           100.0        87.5              100.0                  100.0                  100.0                     100.0             100.0           87.5            75.0              50.0
+             True                          50.0             50.0              75.0             100.0            75.0                37.5              100.0            100.0         25.0             50.0            50.0        75.0              100.0                  100.0                   75.0                      50.0             100.0           50.0            50.0              12.5
+mem0         False                         75.0             50.0              50.0              62.5           100.0                75.0               25.0             87.5         75.0             25.0            62.5        62.5               25.0                  100.0                   50.0                      75.0             100.0           12.5           100.0              50.0
+             True                          75.0             12.5              50.0              50.0           100.0                12.5               75.0             62.5         62.5             25.0            62.5        25.0                0.0                  100.0                   50.0                      12.5              75.0            0.0            25.0              12.5
+memgpt       False                        100.0            100.0             100.0               0.0             0.0                 0.0              100.0             50.0         50.0            100.0           100.0       100.0               50.0                   62.5                    0.0                     100.0              50.0           50.0             0.0              25.0
+             True                         100.0            100.0              50.0              50.0            50.0                 0.0              100.0            100.0         75.0             75.0            87.5       100.0              100.0                  100.0                   50.0                      87.5              50.0           12.5             0.0              50.0
+rag          False                         87.5            100.0             100.0             100.0            50.0                37.5              100.0             75.0         25.0            100.0           100.0        50.0               75.0                  100.0                  100.0                     100.0             100.0           50.0            50.0              50.0
+             True                          75.0            100.0              50.0              62.5           100.0                25.0               12.5            100.0         37.5             50.0            50.0        50.0               87.5                  100.0                   50.0                      62.5             100.0           37.5             0.0              12.5
+
+================================================================================
+IMPACT OF OVER-UPDATING BY DOMAIN (Accuracy without - Accuracy with)
+================================================================================
+Positive values indicate performance dropped when over-updating (noise) was introduced.
+Negative values indicate performance improved with over-updating.
+--------------------------------------------------------------------------------
+domain        Academic_Funding  Academic_Stress  Automotive_Shift  E-commerce_Stock  Finance_Ripple  Fitness_Dependency  Gardening_Weather  Household_Power  IT_Overtime  Legal_Deadlines  Logistics_Flat  Pet_Safety  Photography_Shoot  Professional_Conflict  Real_Estate_Marketing  Relationship_Reservation  Smart_Home_Logic  Social_Injury  Sports_Betting  Travel_Logistics
+system                                                                                                                                                                                                                                                                                                                                                                             
+long_context              37.5             37.5              25.0               0.0            12.5                62.5                0.0              0.0          0.0             50.0            50.0        12.5                0.0                    0.0                   25.0                      50.0               0.0           37.5            25.0              37.5
+mem0                       0.0             37.5               0.0              12.5             0.0                62.5              -50.0             25.0         12.5              0.0             0.0        37.5               25.0                    0.0                    0.0                      62.5              25.0           12.5            75.0              37.5
+memgpt                     0.0              0.0              50.0             -50.0           -50.0                 0.0                0.0            -50.0        -25.0             25.0            12.5         0.0              -50.0                  -37.5                  -50.0                      12.5               0.0           37.5             0.0             -25.0
+rag                       12.5              0.0              50.0              37.5           -50.0                12.5               87.5            -25.0        -12.5             50.0            50.0         0.0              -12.5                    0.0                   50.0                      37.5               0.0           12.5            50.0              37.5
+
+================================================================================
+VARIANCE ACROSS DOMAINS (Separated by is_over_updating)
+================================================================================
+Higher variance means the system's performance is highly sensitive to the specific domain.
+--------------------------------------------------------------------------------
+                               Variance  Std_Dev  Mean_Accuracy
+system       is_over_updating                                  
+long_context False               382.81    19.57          89.38
+             True                758.22    27.54          66.25
+mem0         False               747.94    27.35          63.12
+             True               1011.10    31.80          44.38
+memgpt       False              1701.89    41.25          56.88
+             True               1172.29    34.24          66.88
+rag          False               700.66    26.47          77.50
+             True               1040.71    32.26          58.12
+
+================================================================================
+REFINED VARIANCE ACROSS DOMAINS (Excluding 'Dead' Topics)
+================================================================================
+Excluding domains that the LLM fundamentally struggles with: ['Travel_Logistics', 'Fitness_Dependency', 'Social_Injury', 'Sports_Betting', 'IT_Overtime']
+This isolates the memory system's volatility from baseline LLM logic failures.
+--------------------------------------------------------------------------------
+                               Refined_Variance  Refined_Std_Dev  Refined_Mean_Accuracy
+system       is_over_updating                                                          
+long_context False                        32.74             5.72                  96.67
+             True                        488.10            22.09                  76.67
+mem0         False                       702.38            26.50                  63.33
+             True                        979.17            31.29                  51.67
+memgpt       False                      1647.32            40.59                  67.50
+             True                        531.25            23.05                  80.00
+rag          False                       331.85            18.22                  89.17
+             True                        732.14            27.06                  70.00
+
+================================================================================
+WITHIN-DOMAIN VARIANCE (Separated by is_over_updating)
+================================================================================
+This shows how erratic the performance is within each specific domain.
+Variance of 0 means the system was consistently right (or consistently wrong) on all trials in that domain.
+Higher variance (up to ~0.25 for binary data) means the system was inconsistent (random guessing / noise).
+--------------------------------------------------------------------------------
+domain                         Academic_Funding  Academic_Stress  Automotive_Shift  E-commerce_Stock  Finance_Ripple  Fitness_Dependency  Gardening_Weather  Household_Power  IT_Overtime  Legal_Deadlines  Logistics_Flat  Pet_Safety  Photography_Shoot  Professional_Conflict  Real_Estate_Marketing  Relationship_Reservation  Smart_Home_Logic  Social_Injury  Sports_Betting  Travel_Logistics
+system       is_over_updating                                                                                                                                                                                                                                                                                                                                                                       
+long_context False                        0.125            0.125             0.000             0.000           0.125               0.000              0.000            0.000        0.214            0.000           0.000       0.125              0.000                  0.000                  0.000                     0.000             0.000          0.125           0.214             0.286
+             True                         0.286            0.286             0.214             0.000           0.214               0.268              0.000            0.000        0.214            0.286           0.286       0.214              0.000                  0.000                  0.214                     0.286             0.000          0.286           0.286             0.125
+mem0         False                        0.214            0.286             0.286             0.268           0.000               0.214              0.214            0.125        0.214            0.214           0.268       0.268              0.214                  0.000                  0.286                     0.214             0.000          0.125           0.000             0.286
+             True                         0.214            0.125             0.286             0.286           0.000               0.125              0.214            0.268        0.268            0.214           0.268       0.214              0.000                  0.000                  0.286                     0.125             0.214          0.000           0.214             0.125
+memgpt       False                        0.000            0.000             0.000             0.000           0.000               0.000              0.000            0.286        0.286            0.000           0.000       0.000              0.286                  0.268                  0.000                     0.000             0.286          0.286           0.000             0.214
+             True                         0.000            0.000             0.286             0.286           0.286               0.000              0.000            0.000        0.214            0.214           0.125       0.000              0.000                  0.000                  0.286                     0.125             0.286          0.125           0.000             0.286
+rag          False                        0.125            0.000             0.000             0.000           0.286               0.268              0.000            0.214        0.214            0.000           0.000       0.286              0.214                  0.000                  0.000                     0.000             0.000          0.286           0.286             0.286
+             True                         0.214            0.000             0.286             0.268           0.000               0.214              0.125            0.000        0.268            0.286           0.286       0.286              0.125                  0.000                  0.286                     0.268             0.000          0.268           0.000             0.125
+
+================================================================================
+AVERAGE WITHIN-DOMAIN NOISE (Mean variance across all domains)
+================================================================================
+This single number summarizes the average 'noisiness' across all domains.
+Higher means more random guessing overall.
+--------------------------------------------------------------------------------
+                               Mean_Variance_Noise
+system       is_over_updating                     
+long_context False                           0.067
+             True                            0.173
+mem0         False                           0.185
+             True                            0.172
+memgpt       False                           0.096
+             True                            0.126
+rag          False                           0.123
+             True                            0.165

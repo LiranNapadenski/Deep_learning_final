@@ -14,6 +14,23 @@ class ZepWrapper(BaseMemoryWrapper):
         self.session_id = None
         self._pending_messages = []
 
+    def _retry_api_call(self, func, *args, **kwargs):
+        for attempt in range(5):
+            try:
+                return func(*args, **kwargs)
+            except Exception as e:
+                err_str = str(e)
+                if "429" in err_str or "Rate limit" in err_str:
+                    # Look for retry-after in the error string or fallback to 25s
+                    import re
+                    match = re.search(r"'retry-after': '(\d+)'", err_str)
+                    wait_time = int(match.group(1)) + 1 if match else 25
+                    print(f"  [Zep] Rate limit hit. Sleeping for {wait_time}s...")
+                    time.sleep(wait_time)
+                else:
+                    raise e
+        return func(*args, **kwargs)
+
     def reset(self):
         """Creates unique User/Thread for 100% trial isolation."""
         self.user_id = f"u_{uuid.uuid4().hex[:8]}"
@@ -21,8 +38,8 @@ class ZepWrapper(BaseMemoryWrapper):
         self._pending_messages = []
         
         try:
-            self.client.user.add(user_id=self.user_id)
-            self.client.thread.create(user_id=self.user_id, thread_id=self.session_id)
+            self._retry_api_call(self.client.user.add, user_id=self.user_id)
+            self._retry_api_call(self.client.thread.create, user_id=self.user_id, thread_id=self.session_id)
         except Exception as e:
             print(f"  [Zep] Reset error: {e}")
 
@@ -37,40 +54,24 @@ class ZepWrapper(BaseMemoryWrapper):
             chunk_size = 25
             for i in range(0, len(messages), chunk_size):
                 chunk = messages[i:i + chunk_size]
-                self.client.thread.add_messages(self.session_id, messages=chunk)
+                self._retry_api_call(self.client.thread.add_messages, self.session_id, messages=chunk)
             
-            # Allow the Graphiti engine to process the 33-turn block
-            self._wait_for_facts(timeout=45) 
+            self._wait_for_facts() 
         except Exception as e:
             print(f"  [Zep] History upload error: {e}")
 
-    def _wait_for_facts(self, timeout=45):
-        start = time.time()
-        while time.time() - start < timeout:
-            try:
-                res = self.client.graph.search(
-                    user_id=self.user_id,
-                    query="user",
-                    limit=5
-                )
-
-                if res and (res.edges or res.context):
-                    return True
-
-            except Exception:
-                pass
-
-            time.sleep(3)
-
-        print("[Zep] Warning: Graph may not be fully ready")
-        return False
+    def _wait_for_facts(self, timeout=90):
+        # We must wait long enough for Zep's async graph update to process the *newest* messages.
+        # Polling for any edge is flawed because old edges will falsely trigger success.
+        time.sleep(15)
+        return True
     def query(self, question: str) -> str:
         try:
             # 1. Sync any updates
             if self._pending_messages:
-                self.client.thread.add_messages(self.session_id, messages=self._pending_messages)
+                self._retry_api_call(self.client.thread.add_messages, self.session_id, messages=self._pending_messages)
                 self._pending_messages = []
-                self._wait_for_facts(timeout=25)
+                self._wait_for_facts()
 
             # 2. THE FIX: Broaden the search scope
             # We use 'rerank=True' if available in your SDK version, 
@@ -80,10 +81,10 @@ class ZepWrapper(BaseMemoryWrapper):
                 Relevant user facts, personal info, corrections, dates, preferences.
                 """
 
-            search_results = self.client.graph.search(
+            search_results = self._retry_api_call(
+                self.client.graph.search,
                 user_id=self.user_id,
                 query=expanded_query,
-                center_node_id=None,
                 limit=20
             )
             
@@ -97,21 +98,32 @@ class ZepWrapper(BaseMemoryWrapper):
             if search_results.edges:
                 # We sort edges by 'created_at' if available, or just list them
                 # Latest facts should ideally be at the bottom for the LLM's recency bias
-                edge_list = [f"- {e.fact}" for e in search_results.edges if e.fact]
+                edge_list = []
+                for e in search_results.edges:
+                    if e.fact:
+                        ts = getattr(e, 'created_at', getattr(e, 'timestamp', ''))
+                        prefix = f"[{ts}] " if ts else ""
+                        edge_list.append(f"- {prefix}{e.fact}")
                 context_pieces.append("Atomic Facts:\n" + "\n".join(edge_list))
 
             if not context_pieces:
                 try:
-                    thread = self.client.thread.get(self.session_id)
-                    msgs = thread.messages[-20:] if thread.messages else []
+                    thread = self._retry_api_call(self.client.thread.get, self.session_id)
+                    msgs = thread.messages if thread.messages else []
+                    
+                    if len(msgs) > 20:
+                        msgs = msgs[:5] + msgs[-15:]
 
                     fallback = "\n".join([f"{m.role}: {m.content}" for m in msgs])
-                    context_pieces.append("Raw Conversation:\n" + fallback)
-
+                    context_pieces.append("Raw Conversation (Fallback):\n" + fallback)
                 except Exception:
                     pass
             
             world_state = "\n\n".join(context_pieces)
+            
+            print("\n--- ZEP WORLD STATE ---")
+            print(world_state)
+            print("-----------------------\n")
 
             # 4. STAGE-GATE PROMPT
             # We add a 'Strictness' clause to stop hallucinations

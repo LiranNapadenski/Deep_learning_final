@@ -46,12 +46,15 @@ class MemGPTWrapper(BaseMemoryWrapper):
     # Memory Controller
     # -------------------------
     def _should_store(self, content: str) -> bool:
-        """
-        Decide if something is worth long-term storage.
-        You can make this smarter later.
-        """
-        keywords = ["birthday", "name", "age", "live", "prefer", "favorite"]
-        return any(k in content.lower() for k in keywords)
+        content = content.lower()
+
+        # Strong signals
+        if any(k in content for k in [
+                "is", "will", "at", "on", "scheduled", "arrives"
+            ]):
+            return True
+
+        return False
 
     def _format_turn(self, role: str, content: str):
         return f"{role}: {content}"

@@ -1,0 +1,18 @@
+system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
+mem0,STAGGERED_001,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,"You need to be home on Wednesday, May 6, 2026.",True
+mem0,STAGGERED_001,Logistics,True,Locality_Integrity,What is the ETA for the chair?,Friday,"Friday, May 8, 2026.",True
+mem0,STAGGERED_002,Social,True,Update_Success,When is my actual birthday?,Sunday,"Sunday, May 10, 2026.",True
+mem0,STAGGERED_002,Social,True,Locality_Integrity,When is the big party happening?,Friday night,"The big party is happening on Friday, May 8, 2026.",True
+mem0,STAGGERED_003,Coding,False,Update_Success,Which port is the API service using?,8080,8080,True
+mem0,STAGGERED_003,Coding,False,Locality_Integrity,Where is the database located?,5432,The database is located on port 5432.,True
+mem0,STAGGERED_004,Education,True,Update_Success,Where do I need to go for my math test?,Library,You need to go to the Library.,True
+mem0,STAGGERED_004,Education,True,Locality_Integrity,When is the history paper due?,Tomorrow at midnight,"Midnight on May 5, 2026.",False
+mem0,STAGGERED_005,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,"Friends should arrive for the game before the 7 PM kickoff on May 4, 2026.",True
+mem0,STAGGERED_005,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,"Your gym session is at 8 AM on May 5, 2026.",True
+mem0,STAGGERED_006,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,"Your friends should arrive at 7 PM on May 4, 2026.",True
+mem0,STAGGERED_006,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,"8 AM on May 5, 2026.",True
+mem0,STAGGERED_007,Cooking,True,Update_Success,What temperature should I set the oven to?,350 degrees,350 degrees.,True
+mem0,STAGGERED_007,Cooking,True,Locality_Integrity,How long will I be chopping vegetables?,20 minutes,Approximately 20 minutes.,True
+mem0,STAGGERED_008,Academic,False,Update_Success,What was the final percentage increase in the study?,12% increase,12%,True
+mem0,STAGGERED_008,Academic,False,Locality_Integrity,How did the control group turn out?,Zero change,The control group showed no movement from the baseline.,True
+mem0,STAGGERED_009,Astronomy,False,Update_Success,Which planet holds the record for highest surface temperature?,Venus,Venus.,True

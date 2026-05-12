@@ -1,0 +1,25 @@
+system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
+memgpt,STAGGERED_001,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,"You need to be home for the desk delivery this Wednesday, as the courier reported a logistical delay that pushed the arrival back from the original Monday date.",True
+memgpt,STAGGERED_001,Logistics,True,Locality_Integrity,What is the ETA for the chair?,Friday,The chair is scheduled to arrive this Friday.,True
+memgpt,STAGGERED_002,Social,True,Update_Success,When is my actual birthday?,Sunday,"Your birthday is this Saturday. (You previously noted that you had updated your information to reflect that your birthday is this Saturday, rather than the Sunday mentioned in an earlier correction.)",False
+memgpt,STAGGERED_002,Social,True,Locality_Integrity,When is the big party happening?,Friday night,The big party is happening on Friday night.,True
+memgpt,STAGGERED_003,Coding,False,Update_Success,Which port is the API service using?,8080,The API service is using port 8080.,True
+memgpt,STAGGERED_003,Coding,False,Locality_Integrity,Where is the database located?,5432,"The PostgreSQL database is running on its default port, 5432.",True
+memgpt,STAGGERED_004,Education,True,Update_Success,Where do I need to go for my math test?,Library,"Answer: You need to go to the Library for your math test. While it was originally scheduled for Room 4, it was moved there due to the flood in the science wing.",True
+memgpt,STAGGERED_004,Education,True,Locality_Integrity,When is the history paper due?,Tomorrow at midnight,Your history paper is due by midnight tomorrow.,True
+memgpt,STAGGERED_005,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,"Your friends should arrive for the watch party in time for the championship match, which kicks off at 7 PM.",True
+memgpt,STAGGERED_005,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,Your gym session is at 8 AM.,True
+memgpt,STAGGERED_006,Sports,False,Update_Success,What time should my friends arrive for the game?,7:00 PM,Your friends should arrive for the watch party ahead of the 7 PM kickoff for the championship match.,True
+memgpt,STAGGERED_006,Sports,False,Locality_Integrity,When is my gym session?,8:00 AM,Your gym session is at 8 AM.,True
+memgpt,STAGGERED_007,Cooking,True,Update_Success,What temperature should I set the oven to?,350 degrees,"You should set the oven to 350 degrees. While the original recipe called for 400 degrees, a correction noted that 350 degrees is much better to avoid burning the dish.",True
+memgpt,STAGGERED_007,Cooking,True,Locality_Integrity,How long will I be chopping vegetables?,20 minutes,The prep work with the vegetables should take about 20 minutes.,True
+memgpt,STAGGERED_008,Academic,False,Update_Success,What was the final percentage increase in the study?,12% increase,"The final percentage increase in the study was 12%, which the department head confirmed is statistically significant.",True
+memgpt,STAGGERED_008,Academic,False,Locality_Integrity,How did the control group turn out?,Zero change,"The control group, as expected, showed absolutely no movement from the baseline.",True
+memgpt,STAGGERED_009,Astronomy,False,Update_Success,Which planet holds the record for highest surface temperature?,Venus,"Venus holds the record for the highest surface temperature. Even though Mercury is closer to the sun, Venus is hotter due to its thick atmosphere.",True
+memgpt,STAGGERED_009,Astronomy,False,Locality_Integrity,How many moons are orbiting the red planet?,Two moons,"The red planet, Mars, has two moons orbiting it: Phobos and Deimos.",True
+memgpt,STAGGERED_010,Legal,False,Update_Success,What is the expiration date on the lease?,October 12th,The expiration date on the lease is October 12th.,True
+memgpt,STAGGERED_010,Legal,False,Locality_Integrity,When did the NDA signing take place?,January 5th,The NDA signing took place on the 5th of January.,True
+memgpt,STAGGERED_011,IT Support,True,Update_Success,What is the current status of the main web server?,Online/Running,The main web server is back online after a quick reboot.,True
+memgpt,STAGGERED_011,IT Support,True,Locality_Integrity,Is the backup database still okay?,Online/Running,"Yes, the backup database server is still running fine, so at least we haven't lost any data.",True
+memgpt,STAGGERED_012,Astronomy,False,Update_Success,Which planet holds the record for highest surface temperature?,Venus,"Venus holds the record for the highest surface temperature. Even though Mercury is closer to the sun, Venus is hotter because of its thick atmosphere, which creates an intense greenhouse effect.",True
+memgpt,STAGGERED_012,Astronomy,False,Locality_Integrity,How many moons are orbiting the red planet?,Two moons,"The red planet, Mars, has two moons orbiting it: Phobos and Deimos.",True

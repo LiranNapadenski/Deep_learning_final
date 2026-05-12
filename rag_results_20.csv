@@ -1,2 +1,0 @@
-system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
-rag,STAGGERED_001,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,You need to be home for the desk delivery on Wednesday.,True

@@ -1,0 +1,222 @@
+[
+    {
+        "domain": "Finance_Ripple",
+        "fact_a": "I just initiated a wire transfer of $500 to my landlord for the utility back-pay.",
+        "fact_b": "Since that was my last $500, I have to cancel my steak dinner tonight and eat ramen.",
+        "update_a_v1": "The bank flagged the $500 transfer for verification, so it's currently on hold.",
+        "update_a_v2_final": "My landlord called and said he's waiving the bill! I cancelled the wire entirely.",
+        "final_a": "No money sent; wire cancelled.",
+        "final_b": "Can go to the steak dinner (Inference: the financial constraint is gone).",
+        "q_a": "What happened with the money for the landlord?",
+        "q_b": "Am I still stuck eating ramen tonight?"
+    },
+    {
+        "domain": "Smart_Home_Logic",
+        "fact_a": "My smart thermostat is stuck at 85 degrees and I can't turn it off manually.",
+        "fact_b": "Because it's a sauna in here, I've opened every window in the house to cool down.",
+        "update_a_v1": "I got the temperature down to 75, but the system is still acting buggy.",
+        "update_a_v2_final": "I cut the power to the HVAC; it's finally cooling down to a normal 68 degrees.",
+        "final_a": "Power cut; system off.",
+        "final_b": "Windows should be closed (Inference: cooling is no longer needed).",
+        "q_a": "What is the status of the heating system?",
+        "q_b": "Do I still need the windows open to keep the house comfortable?"
+    },
+    {
+        "domain": "Professional_Conflict",
+        "fact_a": "The CEO is visiting our branch today, so everyone has to wear formal business attire.",
+        "fact_b": "Since I usually wear hoodies, I had to go out and buy a $200 suit this morning.",
+        "update_a_v1": "The CEO's flight was delayed, so the meeting is pushed to late this evening.",
+        "update_a_v2_final": "The CEO cancelled the visit entirely to do a Zoom call from home instead.",
+        "final_a": "CEO visit cancelled; Zoom call only.",
+        "final_b": "The $200 suit was still purchased (Inference: Past spending is not undone).",
+        "q_a": "Is the CEO still coming to the office in person?",
+        "q_b": "Did I still end up spending $200 on a suit today?"
+    },
+    {
+        "domain": "Fitness_Dependency",
+        "fact_a": "I severely sprained my left ankle during my run, so I can't put any weight on it.",
+        "fact_b": "Because of the injury, I've hired a neighbor to mow my lawn this afternoon.",
+        "update_a_v1": "The swelling has gone down slightly, but it still throbs when I stand up.",
+        "update_a_v2_final": "The doctor says it's just a minor cramp! I can walk and jump perfectly fine now.",
+        "final_a": "Ankle is healthy; no injury.",
+        "final_b": "Neighbor's help is no longer required (Inference: User can do it).",
+        "q_a": "What is the medical status of my ankle?",
+        "q_b": "Do I still need the neighbor to mow the lawn?"
+    },
+    {
+        "domain": "Pet_Safety",
+        "fact_a": "My dog was diagnosed with a highly contagious stomach virus this morning.",
+        "fact_b": "To protect my cat, I've moved the cat to my mother's house for the week.",
+        "update_a_v1": "The dog is acting a bit more energetic, but the vet still says to be careful.",
+        "update_a_v2_final": "The test was a false positive! It was just a mild case of eating bad grass.",
+        "final_a": "Dog is not contagious; healthy.",
+        "final_b": "Cat can come back home (Inference: the threat to the cat is gone).",
+        "q_a": "What is the dog's actual diagnosis?",
+        "q_b": "Does my cat still need to stay at my mother's house?"
+    },
+    {
+        "domain": "Travel_Logistics",
+        "fact_a": "I'm currently at the airport in London waiting for my flight to New York.",
+        "fact_b": "Since I'm stuck here, I just spent $15 on a pre-packaged airport sandwich.",
+        "update_a_v1": "The flight is delayed 4 hours, so I'm moving to the lounge to wait.",
+        "update_a_v2_final": "The flight was cancelled. I've already taken a taxi back to my own house.",
+        "final_a": "At home; flight cancelled.",
+        "final_b": "User still ate/bought the $15 sandwich (Inference: Past consumption remains).",
+        "q_a": "Where am I physically located right now?",
+        "q_b": "What happened regarding that expensive sandwich I mentioned?"
+    },
+    {
+        "domain": "Automotive_Shift",
+        "fact_a": "My car's transmission completely failed, so it's currently at the repair shop.",
+        "fact_b": "Because I'm carless, I bought a $100 monthly pass for the city bus system.",
+        "update_a_v1": "The mechanic says he might be able to find a used part to save me money.",
+        "update_a_v2_final": "It wasn't the transmission! Just a loose sensor. I'm driving my car again now.",
+        "final_a": "Car is fixed and with the user.",
+        "final_b": "User still owns a $100 bus pass (Inference: The purchase is non-refundable).",
+        "q_a": "What is the status of my car?",
+        "q_b": "Do I still have that $100 bus pass?"
+    },
+    {
+        "domain": "Academic_Stress",
+        "fact_a": "The professor moved our final exam to a room that doesn't have air conditioning.",
+        "fact_b": "Because it'll be 90 degrees in there, I bought a portable battery-powered fan.",
+        "update_a_v1": "The department is trying to find a cooler room, but nothing is confirmed.",
+        "update_a_v2_final": "Good news! The exam is now online, so I'll be taking it from my cool bedroom.",
+        "final_a": "Exam is online.",
+        "final_b": "Portable fan is no longer necessary for the exam (Inference: environment changed).",
+        "q_a": "Where is the final exam taking place?",
+        "q_b": "Do I still need to use that portable fan during the test?"
+    },
+    {
+        "domain": "Legal_Deadlines",
+        "fact_a": "I have to sign the legal settlement by 5 PM today or the deal is off.",
+        "fact_b": "Because of the deadline, I've cleared my entire afternoon and cancelled all meetings.",
+        "update_a_v1": "The other lawyers are slow; they asked for an extension until 7 PM.",
+        "update_a_v2_final": "The deal fell through entirely. No signing will happen today at all.",
+        "final_a": "Deal is off; no signing.",
+        "final_b": "The afternoon is now free (Inference: clearing the schedule is no longer needed).",
+        "q_a": "What is the status of the settlement signing?",
+        "q_b": "Do I still need to keep my afternoon clear of meetings?"
+    },
+    {
+        "domain": "Gardening_Weather",
+        "fact_a": "The weather forecast says there is a 100% chance of a heatwave and no rain.",
+        "fact_b": "Because of the heat, I've set my automatic sprinklers to run for two hours daily.",
+        "update_a_v1": "The clouds are rolling in, but the temperature is still quite high.",
+        "update_a_v2_final": "It's actually a thunderstorm! It's pouring rain and the temperature dropped 20 degrees.",
+        "final_a": "It is raining and cool.",
+        "final_b": "Sprinklers should be turned off (Inference: nature is providing the water).",
+        "q_a": "What is the current weather like outside?",
+        "q_b": "Should I keep the sprinklers running for two hours a day?"
+    },
+    {
+        "domain": "IT_Overtime",
+        "fact_a": "Our primary database server crashed, losing all customer data from the last hour.",
+        "fact_b": "Because of the crisis, I've told my wife I'll be working at the office until midnight.",
+        "update_a_v1": "We found a backup, but it's partially corrupted and will take time to fix.",
+        "update_a_v2_final": "The database was actually fine; it was just a display bug. Data is 100% safe.",
+        "final_a": "Server is up; data is safe.",
+        "final_b": "User can go home early (Inference: the crisis is resolved).",
+        "q_a": "What is the status of the customer data?",
+        "q_b": "Am I still required to stay at the office until midnight?"
+    },
+    {
+        "domain": "Social_Injury",
+        "fact_a": "I broke my right leg in a skiing accident, so I'm in a full leg cast.",
+        "fact_b": "Because I can't walk, I've cancelled my enrollment in the salsa dancing class.",
+        "update_a_v1": "The doctors are re-evaluating the X-rays to see if it's just a severe break.",
+        "update_a_v2_final": "It's just a hairline fracture! They gave me a walking boot instead of a cast.",
+        "final_a": "Hairline fracture; in a walking boot.",
+        "final_b": "Still probably can't do salsa (Inference: boot still limits high-impact dance).",
+        "q_a": "What is the actual condition of my leg?",
+        "q_b": "Should I call the dance studio to un-cancel my salsa class?"
+    },
+    {
+        "domain": "Household_Power",
+        "fact_a": "The power in my neighborhood went out and isn't expected back for 24 hours.",
+        "fact_b": "Because the fridge is off, I bought $20 worth of ice to keep the milk cold.",
+        "update_a_v1": "The utility company says a transformer blew, so it's a major repair job.",
+        "update_a_v2_final": "The power just flickered back on! The grid is fully operational again.",
+        "final_a": "Power is back on.",
+        "final_b": "Ice is no longer needed (Inference: fridge is working again).",
+        "q_a": "Is the electricity working in the house?",
+        "q_b": "Do I still need to rely on that ice to keep my food from spoiling?"
+    },
+    {
+        "domain": "Real_Estate_Marketing",
+        "fact_a": "I've listed my house for sale, and the first open house is scheduled for Sunday.",
+        "fact_b": "Because of the open house, I've paid a professional cleaning crew to scrub the place.",
+        "update_a_v1": "A few people have called for private showings, but Sunday is the big day.",
+        "update_a_v2_final": "I decided to take the house off the market; I'm not moving anymore.",
+        "final_a": "House is no longer for sale.",
+        "final_b": "The cleaning crew was still paid (Inference: Past service was completed).",
+        "q_a": "Is the house still going to be sold?",
+        "q_b": "Did the cleaning crew still get paid for their work?"
+    },
+    {
+        "domain": "Sports_Betting",
+        "fact_a": "My favorite team lost their star quarterback to a season-ending injury.",
+        "fact_b": "Because I'm sure they'll lose now, I bet $50 against them for this Sunday's game.",
+        "update_a_v1": "The backup quarterback looked shaky in practice today.",
+        "update_a_v2_final": "The star quarterback was cleared to play! It was just a minor stinger.",
+        "final_a": "Star player is healthy and playing.",
+        "final_b": "The $50 bet is still active (Inference: You can't usually take back a bet).",
+        "q_a": "Is the star quarterback playing on Sunday?",
+        "q_b": "What happened with my $50 bet against the team?"
+    },
+    {
+        "domain": "E-commerce_Stock",
+        "fact_a": "The vintage watch I wanted is listed as 'In Stock' on the website.",
+        "fact_b": "Because it's rare, I've already told my wife I'm spending $1000 on it today.",
+        "update_a_v1": "I put it in my cart, but the site is loading very slowly.",
+        "update_a_v2_final": "When I hit 'Buy', it said 'Out of Stock.' I couldn't get it after all.",
+        "final_a": "Watch is out of stock; no purchase made.",
+        "final_b": "Did not spend the $1000 (Inference: The transaction failed).",
+        "q_a": "Did I successfully buy the vintage watch?",
+        "q_b": "Am I still down $1000 in my bank account from that purchase?"
+    },
+    {
+        "domain": "Academic_Funding",
+        "fact_a": "Our research grant was officially rejected by the university committee.",
+        "fact_b": "Because we have no funding, I've told the lab assistants they are laid off.",
+        "update_a_v1": "I'm looking for private donors, but it's not looking good.",
+        "update_a_v2_final": "A private tech company just stepped in to fund the whole project! We're rich.",
+        "final_a": "Project is fully funded.",
+        "final_b": "Lab assistants can keep their jobs (Inference: the layoffs are no longer needed).",
+        "q_a": "What is the financial status of the research project?",
+        "q_b": "Are the lab assistants still being laid off?"
+    },
+    {
+        "domain": "Logistics_Flat",
+        "fact_a": "My delivery truck has a massive flat tire and no spare in the back.",
+        "fact_b": "Because the truck is stuck, I've called all my customers to say deliveries are late.",
+        "update_a_v1": "A roadside assistance van is nearby, but they are helping someone else first.",
+        "update_a_v2_final": "The tire wasn't flat! It was just a faulty pressure sensor. I'm back on the road.",
+        "final_a": "Truck is moving; no tire issue.",
+        "final_b": "Deliveries might still be slightly behind (Inference: the delay already happened).",
+        "q_a": "Is the truck still stuck with a flat tire?",
+        "q_b": "Are the deliveries still going to be late to the customers?"
+    },
+    {
+        "domain": "Relationship_Reservation",
+        "fact_a": "It's our anniversary, and I forgot to make a reservation at the fancy bistro.",
+        "fact_b": "Because I'm a mess, I've already apologized to my wife and bought apology flowers.",
+        "update_a_v1": "I called them and they said they are 100% booked until next Tuesday.",
+        "update_a_v2_final": "I found a confirmation email! I actually made the reservation months ago.",
+        "final_a": "Reservation exists; user didn't forget.",
+        "final_b": "Apology flowers still exist (Inference: The purchase is done).",
+        "q_a": "Do we have a table at the bistro tonight?",
+        "q_b": "What happened with those apology flowers I bought?"
+    },
+    {
+        "domain": "Photography_Shoot",
+        "fact_a": "My professional camera lens shattered after I dropped it on the pavement.",
+        "fact_b": "Because I can't take photos, I've cancelled the wedding shoot for this weekend.",
+        "update_a_v1": "I'm looking into rentals, but all the local shops are closed for the holiday.",
+        "update_a_v2_final": "It was just the $20 UV filter that shattered! The lens itself is perfectly fine.",
+        "final_a": "Camera lens is functional.",
+        "final_b": "Should try to un-cancel the wedding shoot (Inference: equipment is ready).",
+        "q_a": "Is my camera lens actually broken?",
+        "q_b": "Do I still need to stay home from the wedding shoot this weekend?"
+    }
+]

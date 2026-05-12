@@ -34,8 +34,8 @@ def _min_interval_seconds() -> float:
         except ValueError:
             pass
 
-    # Safe-ish default for shared/free tiers.
-    return 5.0
+    # Default to 60 RPM (1.0 second interval) for higher-tier keys.
+    return 1.0
 
 
 def _pace() -> None:

@@ -1,0 +1,4 @@
+system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
+zep,STAGGERED_001,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,Information not found in memory.,False
+zep,STAGGERED_001,Logistics,True,Locality_Integrity,What is the ETA for the chair?,Friday,Information not found in memory.,False
+zep,STAGGERED_002,Social,True,Update_Success,When is my actual birthday?,Sunday,Information not found in memory.,False

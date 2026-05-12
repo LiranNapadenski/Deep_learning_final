@@ -1,9 +1,0 @@
-system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
-mem0,STAGGERED_001,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,The provided facts do not contain information regarding when you need to be home for the desk delivery.,False
-mem0,STAGGERED_001,Logistics,True,Locality_Integrity,What is the ETA for the chair?,Friday,The answer is unknown.,False
-mem0,STAGGERED_002,Social,True,Update_Success,When is my actual birthday?,Sunday,The answer is unknown.,False
-mem0,STAGGERED_002,Social,True,Locality_Integrity,When is the big party happening?,Friday night,The answer is unknown.,False
-mem0,STAGGERED_003,Coding,False,Update_Success,Which port is the API service using?,8080,The provided facts do not contain information regarding which port the API service is using.,False
-mem0,STAGGERED_003,Coding,False,Locality_Integrity,Where is the database located?,5432,The location of the database is unknown.,False
-mem0,STAGGERED_004,Education,True,Update_Success,Where do I need to go for my math test?,Library,The provided facts do not contain information about where you need to go for your math test.,False
-mem0,STAGGERED_004,Education,True,Locality_Integrity,When is the history paper due?,Tomorrow at midnight,The answer is unknown.,False

@@ -1,0 +1,47 @@
+system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
+zep,EXTREME_001,Relationship_Reservation,None,Chain_Correction_Success,Do we have a table at the bistro tonight?,Reservation exists; user didn't forget.,Information not found in memory.,False
+zep,EXTREME_001,Relationship_Reservation,None,Ripple_Effect_Locality,What happened with those apology flowers I bought?,Apology flowers still exist (Inference: The purchase is done).,Information not found in memory.,False
+zep,EXTREME_002,Smart_Home_Logic,None,Chain_Correction_Success,What is the status of the heating system?,Power cut; system off.,Information not found in memory.,False
+zep,EXTREME_002,Smart_Home_Logic,None,Ripple_Effect_Locality,Do I still need the windows open to keep the house comfortable?,Windows should be closed (Inference: cooling is no longer needed).,Information not found in memory.,False
+zep,EXTREME_003,Automotive_Shift,None,Chain_Correction_Success,What is the status of my car?,Car is fixed and with the user.,Information not found in memory.,False
+zep,EXTREME_003,Automotive_Shift,None,Ripple_Effect_Locality,Do I still have that $100 bus pass?,User still owns a $100 bus pass (Inference: The purchase is non-refundable).,Information not found in memory.,False
+zep,EXTREME_004,IT_Overtime,None,Chain_Correction_Success,What is the status of the customer data?,Server is up; data is safe.,Information not found in memory.,False
+zep,EXTREME_004,IT_Overtime,None,Ripple_Effect_Locality,Am I still required to stay at the office until midnight?,User can go home early (Inference: the crisis is resolved).,Information not found in memory.,False
+zep,EXTREME_005,Relationship_Reservation,None,Chain_Correction_Success,Do we have a table at the bistro tonight?,Reservation exists; user didn't forget.,Information not found in memory.,False
+zep,EXTREME_005,Relationship_Reservation,None,Ripple_Effect_Locality,What happened with those apology flowers I bought?,Apology flowers still exist (Inference: The purchase is done).,Information not found in memory.,False
+zep,EXTREME_006,Professional_Conflict,None,Chain_Correction_Success,Is the CEO still coming to the office in person?,CEO visit cancelled; Zoom call only.,Information not found in memory.,False
+zep,EXTREME_006,Professional_Conflict,None,Ripple_Effect_Locality,Did I still end up spending $200 on a suit today?,The $200 suit was still purchased (Inference: Past spending is not undone).,Information not found in memory.,False
+zep,EXTREME_007,Academic_Stress,None,Chain_Correction_Success,Where is the final exam taking place?,Exam is online.,Information not found in memory.,False
+zep,EXTREME_007,Academic_Stress,None,Ripple_Effect_Locality,Do I still need to use that portable fan during the test?,Portable fan is no longer necessary for the exam (Inference: environment changed).,Information not found in memory.,False
+zep,EXTREME_008,Gardening_Weather,None,Chain_Correction_Success,What is the current weather like outside?,It is raining and cool.,Information not found in memory.,False
+zep,EXTREME_008,Gardening_Weather,None,Ripple_Effect_Locality,Should I keep the sprinklers running for two hours a day?,Sprinklers should be turned off (Inference: nature is providing the water).,Information not found in memory.,False
+zep,EXTREME_009,Gardening_Weather,None,Chain_Correction_Success,What is the current weather like outside?,It is raining and cool.,Information not found in memory.,False
+zep,EXTREME_009,Gardening_Weather,None,Ripple_Effect_Locality,Should I keep the sprinklers running for two hours a day?,Sprinklers should be turned off (Inference: nature is providing the water).,Information not found in memory.,False
+zep,EXTREME_010,Smart_Home_Logic,None,Chain_Correction_Success,What is the status of the heating system?,Power cut; system off.,Information not found in memory.,False
+zep,EXTREME_010,Smart_Home_Logic,None,Ripple_Effect_Locality,Do I still need the windows open to keep the house comfortable?,Windows should be closed (Inference: cooling is no longer needed).,Information not found in memory.,False
+zep,EXTREME_011,Finance_Ripple,None,Chain_Correction_Success,What happened with the money for the landlord?,No money sent; wire cancelled.,Information not found in memory.,False
+zep,EXTREME_011,Finance_Ripple,None,Ripple_Effect_Locality,Am I still stuck eating ramen tonight?,Can go to the steak dinner (Inference: the financial constraint is gone).,Information not found in memory.,False
+zep,EXTREME_012,Finance_Ripple,None,Chain_Correction_Success,What happened with the money for the landlord?,No money sent; wire cancelled.,Information not found in memory.,False
+zep,EXTREME_012,Finance_Ripple,None,Ripple_Effect_Locality,Am I still stuck eating ramen tonight?,Can go to the steak dinner (Inference: the financial constraint is gone).,Information not found in memory.,False
+zep,EXTREME_013,Relationship_Reservation,None,Chain_Correction_Success,Do we have a table at the bistro tonight?,Reservation exists; user didn't forget.,Information not found in memory.,False
+zep,EXTREME_013,Relationship_Reservation,None,Ripple_Effect_Locality,What happened with those apology flowers I bought?,Apology flowers still exist (Inference: The purchase is done).,Information not found in memory.,False
+zep,EXTREME_014,Social_Injury,None,Chain_Correction_Success,What is the actual condition of my leg?,Hairline fracture; in a walking boot.,Information not found in memory.,False
+zep,EXTREME_014,Social_Injury,None,Ripple_Effect_Locality,Should I call the dance studio to un-cancel my salsa class?,Still probably can't do salsa (Inference: boot still limits high-impact dance).,Information not found in memory.,False
+zep,EXTREME_015,Sports_Betting,None,Chain_Correction_Success,Is the star quarterback playing on Sunday?,Star player is healthy and playing.,Information not found in memory.,False
+zep,EXTREME_015,Sports_Betting,None,Ripple_Effect_Locality,What happened with my $50 bet against the team?,The $50 bet is still active (Inference: You can't usually take back a bet).,Information not found in memory.,False
+zep,EXTREME_016,Household_Power,None,Chain_Correction_Success,Is the electricity working in the house?,Power is back on.,Information not found in memory.,False
+zep,EXTREME_016,Household_Power,None,Ripple_Effect_Locality,Do I still need to rely on that ice to keep my food from spoiling?,Ice is no longer needed (Inference: fridge is working again).,Information not found in memory.,False
+zep,EXTREME_017,Fitness_Dependency,None,Chain_Correction_Success,What is the medical status of my ankle?,Ankle is healthy; no injury.,Information not found in memory.,False
+zep,EXTREME_017,Fitness_Dependency,None,Ripple_Effect_Locality,Do I still need the neighbor to mow the lawn?,Neighbor's help is no longer required (Inference: User can do it).,Information not found in memory.,False
+zep,EXTREME_018,Legal_Deadlines,None,Chain_Correction_Success,What is the status of the settlement signing?,Deal is off; no signing.,Information not found in memory.,False
+zep,EXTREME_018,Legal_Deadlines,None,Ripple_Effect_Locality,Do I still need to keep my afternoon clear of meetings?,The afternoon is now free (Inference: clearing the schedule is no longer needed).,Information not found in memory.,False
+zep,EXTREME_019,Fitness_Dependency,None,Chain_Correction_Success,What is the medical status of my ankle?,Ankle is healthy; no injury.,Information not found in memory.,False
+zep,EXTREME_019,Fitness_Dependency,None,Ripple_Effect_Locality,Do I still need the neighbor to mow the lawn?,Neighbor's help is no longer required (Inference: User can do it).,Information not found in memory.,False
+zep,EXTREME_020,Professional_Conflict,None,Chain_Correction_Success,Is the CEO still coming to the office in person?,CEO visit cancelled; Zoom call only.,"Yes, the CEO is visiting our branch today.",False
+zep,EXTREME_020,Professional_Conflict,None,Ripple_Effect_Locality,Did I still end up spending $200 on a suit today?,The $200 suit was still purchased (Inference: Past spending is not undone).,Information not found in memory.,False
+zep,EXTREME_021,Household_Power,None,Chain_Correction_Success,Is the electricity working in the house?,Power is back on.,Information not found in memory.,False
+zep,EXTREME_021,Household_Power,None,Ripple_Effect_Locality,Do I still need to rely on that ice to keep my food from spoiling?,Ice is no longer needed (Inference: fridge is working again).,Information not found in memory.,False
+zep,EXTREME_022,Gardening_Weather,None,Chain_Correction_Success,What is the current weather like outside?,It is raining and cool.,Information not found in memory.,False
+zep,EXTREME_022,Gardening_Weather,None,Ripple_Effect_Locality,Should I keep the sprinklers running for two hours a day?,Sprinklers should be turned off (Inference: nature is providing the water).,Information not found in memory.,False
+zep,EXTREME_023,IT_Overtime,None,Chain_Correction_Success,What is the status of the customer data?,Server is up; data is safe.,Information not found in memory.,False
+zep,EXTREME_023,IT_Overtime,None,Ripple_Effect_Locality,Am I still required to stay at the office until midnight?,User can go home early (Inference: the crisis is resolved).,Information not found in memory.,False

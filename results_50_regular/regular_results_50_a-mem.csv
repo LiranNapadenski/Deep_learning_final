@@ -1,0 +1,2 @@
+system,trial_id,domain,is_negation,probe_logic,question,expected,actual,is_correct
+a-mem,STAGGERED_001,Logistics,True,Update_Success,When do I actually need to be home for the desk delivery?,Wednesday,"You need to be home at the time of the desk delivery, as it requires your presence. Please note that while we have this requirement for the desk, the ETA for your chair remains unknown.",False
